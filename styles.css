@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Container Styles */
+.game-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* Guess Form Styles */
+.guess-form {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+    transition: border-color 0.3s ease;
+    animation: slideInLeft 1s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+}
+
+input[type="number"]:focus {
+    border-color: #0a0909;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #f093fb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slideInRight 1s ease;
+}
+
+button:hover {
+    background-color: #f5576c;
+}
+
+/* Result Styles */
+.result {
+    font-size: 1.5rem;
+    color: #0b0a0a;
+    margin-bottom: 20px;
+    animation: slideInUp 1s ease;
+}
+
+/* Play Again Styles */
+.play-again button {
+    padding: 15px 30px;
+    background-color: #f093fb;
+    color: #080707;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slideInDown 1s ease;
+}
+
+.play-again button:hover {
+    background-color: #f5576c;
+}
+#or{
+    display:center;
+    color:black;
+    font-style: bold;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
