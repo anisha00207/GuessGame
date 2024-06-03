@@ -4,7 +4,8 @@
 
 ![image](https://github.com/anisha00207/GuessGame/assets/90251007/08c649ac-de9d-4ddd-9533-93b5adb3641c)
 
-![image](https://github.com/anisha00207/GuessGame/assets/90251007/d0b9784d-2ad2-44b7-bddc-9a89436fcfd4)
+![image](https://github.com/anisha00207/GuessGame/assets/90251007/540a088c-dbc4-46a1-8c22-9002a4659402)
+
 
 
 
